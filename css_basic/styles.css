@@ -1,0 +1,36 @@
+
+/* Set the whole page to use Flexbox in column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
+/* Make <main> a horizontal flex container */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* <article> should take up 2/3 of the width */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1em;
+}
+
+/* <aside> should take up 1/3 of the width */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1em;
+}
+
+/* Optional styling for clarity */
+header, footer {
+  background-color: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+}
