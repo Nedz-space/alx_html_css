@@ -28,6 +28,18 @@ aside {
   padding: 1em;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%; /* Optional for responsiveness */
+}
+
+table, th, td {
+  border: 1px solid #000; /* Or any color you prefer */
+  padding: 8px;
+  text-align: left;
+}
+
+
 /* Optional styling for clarity */
 header, footer {
   background-color: #f0f0f0;
