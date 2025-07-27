@@ -39,17 +39,17 @@ ul {
   text-align: center;
 }
 
-.section-title {
+.section h2 {
   font-size: 36px;
-  font-weight: 700;
-  color: #1a1a1a;
   margin-bottom: 20px;
+  color: #1a1a1a;
 }
 
-.section-subtitle {
+.section p {
   font-size: 18px;
   color: #4f4f4f;
-  margin-bottom: 40px;
+  max-width: 700px;
+  margin: 0 auto 40px;
 }
 
 /* ========== Header ========== */
@@ -122,53 +122,39 @@ nav a:hover {
 }
 
 /* ========== Quote Section ========== */
-.quote-section {
-  background-color: #ffffff;
-  padding: 100px 20px;
+.quote {
+  background-color: #fff7f1;
+  padding: 80px 20px;
   text-align: center;
-  border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
 }
 
-.quote-text {
-  font-size: 28px;
+.quote blockquote {
   font-style: italic;
-  color: #2d2d2d;
-  max-width: 800px;
-  margin: 0 auto 20px;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.quote-author {
-  font-size: 16px;
+.quote cite {
   font-weight: 600;
-  color: #777;
+  color: #888;
+  font-size: 16px;
 }
 
 /* ========== Video List Section ========== */
-.video-section {
-  padding: 100px 20px;
-  background-color: #f9f9f9;
-}
-
-.video-section h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #1a1a1a;
-  text-align: center;
-}
-
-.video-grid {
+.video-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
+  margin-top: 40px;
 }
 
 .video-card {
   background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  text-align: left;
   transition: transform 0.3s ease;
 }
 
@@ -176,17 +162,50 @@ nav a:hover {
   transform: translateY(-5px);
 }
 
-.video-card img {
-  width: 100%;
-  display: block;
-  border-bottom: 1px solid #eee;
-}
-
 .video-card h3 {
   font-size: 20px;
-  font-weight: 600;
-  padding: 16px;
-  color: #333;
+  margin-top: 12px;
+  color: #1a1a1a;
+}
+
+.video-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ========== Membership Section ========== */
+.membership {
+  background-color: #f9f9ff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.membership h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.membership p {
+  font-size: 18px;
+  color: #4f4f4f;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.membership .btn {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.membership .btn:hover {
+  background-color: #0e70d1;
 }
 
 /* ========== Footer ========== */
@@ -213,11 +232,13 @@ footer {
     font-size: 16px;
   }
 
-  .quote-text {
-    font-size: 20px;
+  .section h2,
+  .membership h2 {
+    font-size: 28px;
   }
 
-  .video-card h3 {
-    font-size: 18px;
+  .section p,
+  .membership p {
+    font-size: 16px;
   }
 }
