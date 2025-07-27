@@ -34,6 +34,24 @@ ul {
   margin: 0 auto;
 }
 
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #4f4f4f;
+  margin-bottom: 40px;
+}
+
 /* ========== Header ========== */
 header {
   background-color: #ffffff;
@@ -103,6 +121,74 @@ nav a:hover {
   background-color: #e14d4d;
 }
 
+/* ========== Quote Section ========== */
+.quote-section {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.quote-text {
+  font-size: 28px;
+  font-style: italic;
+  color: #2d2d2d;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.quote-author {
+  font-size: 16px;
+  font-weight: 600;
+  color: #777;
+}
+
+/* ========== Video List Section ========== */
+.video-section {
+  padding: 100px 20px;
+  background-color: #f9f9f9;
+}
+
+.video-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.video-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.video-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px;
+  color: #333;
+}
+
 /* ========== Footer ========== */
 footer {
   background-color: #f8f8f8;
@@ -125,5 +211,13 @@ footer {
 
   .hero p {
     font-size: 16px;
+  }
+
+  .quote-text {
+    font-size: 20px;
+  }
+
+  .video-card h3 {
+    font-size: 18px;
   }
 }
