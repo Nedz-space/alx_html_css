@@ -41,15 +41,14 @@ ul {
 
 .section h2 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   color: #1a1a1a;
 }
 
 .section p {
   font-size: 18px;
   color: #4f4f4f;
-  max-width: 700px;
-  margin: 0 auto 40px;
+  margin-bottom: 40px;
 }
 
 /* ========== Header ========== */
@@ -123,78 +122,87 @@ nav a:hover {
 
 /* ========== Quote Section ========== */
 .quote {
-  background-color: #fff7f1;
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+.quote blockquote {
+  font-size: 24px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.quote cite {
+  display: block;
+  font-size: 16px;
+  color: #888;
+}
+
+/* ========== Videos List Section ========== */
+.videos {
+  background-color: #f9f9f9;
   padding: 80px 20px;
   text-align: center;
 }
 
-.quote blockquote {
-  font-style: italic;
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.quote cite {
-  font-weight: 600;
-  color: #888;
-  font-size: 16px;
-}
-
-/* ========== Video List Section ========== */
-.video-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.video-card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  padding: 16px;
-  text-align: left;
-  transition: transform 0.3s ease;
-}
-
-.video-card:hover {
-  transform: translateY(-5px);
-}
-
-.video-card h3 {
-  font-size: 20px;
-  margin-top: 12px;
+.videos h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
   color: #1a1a1a;
 }
 
-.video-card p {
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.video-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+}
+
+.video-item h3 {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin: 12px 0;
+}
+
+.video-item p {
   font-size: 14px;
   color: #666;
 }
 
 /* ========== Membership Section ========== */
 .membership {
-  background-color: #f9f9ff;
+  background-color: #fff8f8;
   padding: 80px 20px;
   text-align: center;
 }
 
 .membership h2 {
   font-size: 36px;
-  margin-bottom: 20px;
   color: #1a1a1a;
+  margin-bottom: 24px;
 }
 
 .membership p {
   font-size: 18px;
   color: #4f4f4f;
-  max-width: 700px;
-  margin: 0 auto 40px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .membership .btn {
-  background-color: #1e90ff;
+  background-color: #ff5c5c;
   color: #fff;
   padding: 14px 28px;
   border: none;
@@ -205,7 +213,37 @@ nav a:hover {
 }
 
 .membership .btn:hover {
-  background-color: #0e70d1;
+  background-color: #e14d4d;
+}
+
+/* ========== FAQ Section ========== */
+.faq {
+  background-color: #f2f2f2;
+  padding: 80px 20px;
+  text-align: left;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 24px;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #4f4f4f;
+  line-height: 1.5;
 }
 
 /* ========== Footer ========== */
@@ -232,13 +270,11 @@ footer {
     font-size: 16px;
   }
 
-  .section h2,
-  .membership h2 {
+  .section h2 {
     font-size: 28px;
   }
 
-  .section p,
-  .membership p {
-    font-size: 16px;
+  .video-grid {
+    grid-template-columns: 1fr;
   }
 }
