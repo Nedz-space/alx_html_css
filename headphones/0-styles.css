@@ -14,14 +14,14 @@
 -------------------------------------------------- */
 :root {
   --primary-color: #FF6565;
-  --text-color: #fff;
+  --text-color: #ffffff;
   --background-dark: #071629;
   --max-width: 1000px;
   --font-family: 'Arial', sans-serif;
 }
 
 /* --------------------------------------------------
-   GLOBAL STYLES
+   BASE STYLES
 -------------------------------------------------- */
 body {
   font-family: var(--font-family);
@@ -30,9 +30,15 @@ body {
   line-height: 1.6;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: var(--text-color);
+  transition: color 0.3s ease;
 }
 
 a:hover,
@@ -41,7 +47,7 @@ a:active {
 }
 
 /* --------------------------------------------------
-   CONTAINER UTILITY
+   CONTAINER
 -------------------------------------------------- */
 .container {
   max-width: var(--max-width);
@@ -53,14 +59,14 @@ a:active {
    HEADER
 -------------------------------------------------- */
 .site-header {
-  padding: 1.5rem 0;
   background-color: var(--background-dark);
+  padding: 1.5rem 0;
 }
 
 .nav-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -70,20 +76,19 @@ a:active {
 .main-nav a {
   margin-left: 2rem;
   font-size: 0.9rem;
-  transition: color 0.3s ease;
 }
 
 /* --------------------------------------------------
    HERO SECTION
 -------------------------------------------------- */
 .hero {
-  background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-  color: var(--text-color);
+  background: url('../images/headphones_hero_1.jpg') no-repeat center center / cover;
   position: relative;
+  color: var(--text-color);
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 6rem 0;
 }
 
@@ -92,7 +97,7 @@ a:active {
 }
 
 .hero h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -105,12 +110,12 @@ a:active {
 .btn {
   display: inline-block;
   background-color: var(--primary-color);
-  padding: 0.75rem 1.5rem;
   color: #fff;
+  padding: 0.75rem 1.5rem;
   font-weight: bold;
   border: none;
   border-radius: 25px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   transition: opacity 0.3s ease;
 }
 
@@ -122,7 +127,9 @@ a:active {
 .description {
   max-width: 700px;
   margin: 0 auto;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #fff;
 }
 
 /* --------------------------------------------------
@@ -132,18 +139,22 @@ a:active {
   .nav-container {
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
   }
 
   .main-nav a {
-    display: block;
     margin: 0.5rem 0;
   }
 
   .hero h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .subtitle {
     font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
   }
 }

@@ -1,0 +1,140 @@
+/* --------------------------------------------------
+   ICON FONT SETUP
+-------------------------------------------------- */
+@font-face {
+  font-family: 'HolbertonSchoolIcon';
+  src: url('fonts/holberton_school-icon.eot');
+  src: url('fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+       url('fonts/holberton_school-icon.woff2') format('woff2'),
+       url('fonts/holberton_school-icon.woff') format('woff'),
+       url('fonts/holberton_school-icon.ttf') format('truetype'),
+       url('fonts/holberton_school-icon.svg#HolbertonSchoolIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: 'HolbertonSchoolIcon' !important;
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* --------------------------------------------------
+   WHAT WE DO SECTION
+-------------------------------------------------- */
+.what-we-do {
+  padding: 4rem 0;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.section-intro {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: 0.95rem;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.service-item {
+  flex: 1 1 calc(25% - 2rem);
+  min-width: 200px;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.service-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--background-dark);
+}
+
+.service-item p {
+  font-size: 0.9rem;
+}
+
+/* --------------------------------------------------
+   RESPONSIVE - WHAT WE DO
+-------------------------------------------------- */
+@media (max-width: 768px) {
+  .services {
+    justify-content: center;
+  }
+
+  .service-item {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-item {
+    flex: 1 1 100%;
+  }
+}
+
+/* --------------------------------------------------
+   HERO SECTION
+-------------------------------------------------- */
+.hero {
+  background: url('../images/headphones_hero_2.jpg') no-repeat center center / cover;
+  position: relative;
+  color: var(--text-color);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6rem 0;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.9;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #fff;
+}
