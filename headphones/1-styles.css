@@ -25,21 +25,28 @@
    WHAT WE DO SECTION
 -------------------------------------------------- */
 .what-we-do {
-  padding: 4rem 0;
-  background-color: #fff;
-  color: #333;
+  background: url('../images/headphones_hero_2.jpg') no-repeat center center / cover;
+  position: relative;
+  color: #fff;
   text-align: center;
+}
+
+.what-we-do .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4rem 1rem;
 }
 
 .section-title {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .section-intro {
   max-width: 600px;
   margin: 0 auto 3rem;
   font-size: 0.95rem;
+  color: #ddd;
 }
 
 .services {
@@ -59,12 +66,39 @@
 .service-item h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: var(--background-dark);
+  color: #fff;
 }
 
 .service-item p {
   font-size: 0.9rem;
+  color: #ccc;
 }
+
+.icon {
+  font-family: 'HolbertonSchoolIcon' !important;
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #FF6565; /* matches hover/active theme color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .services {
+    justify-content: center;
+  }
+
+  .service-item {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-item {
+    flex: 1 1 100%;
+  }
+}
+
 
 /* --------------------------------------------------
    RESPONSIVE - WHAT WE DO
