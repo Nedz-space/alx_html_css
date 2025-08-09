@@ -157,15 +157,30 @@ body {
   justify-content: center;
   gap: 2rem;
 }
+
+/* CSS Pentagon */
 .metric {
-  background: url('images/pentagone.png') no-repeat center center / contain;
-  padding: 2rem;
   width: 200px;
   height: 200px;
+  background: var(--primary-color);
+  clip-path: polygon(
+    50% 0%,   /* top */
+    100% 38%, /* top-right */
+    82% 100%, /* bottom-right */
+    18% 100%, /* bottom-left */
+    0% 38%    /* top-left */
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.metric:hover {
+  transform: scale(1.05);
 }
 .metric .icon {
   display: inline-flex;
@@ -177,7 +192,7 @@ body {
   height: 60px;
   border-radius: 50%;
   background-color: var(--icon-bg-color);
-  color: var(--primary-color);
+  color: #fff;
   margin-bottom: 1rem;
 }
 .metric h3 {
@@ -186,7 +201,7 @@ body {
 }
 .metric p {
   font-size: 0.95rem;
-  color: #ccc;
+  color: #eee;
 }
 
 /* =========================
